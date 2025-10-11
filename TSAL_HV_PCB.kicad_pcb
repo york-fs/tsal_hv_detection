@@ -263,27 +263,15 @@
 			(uuid "2f29cb4a-3b27-44f6-b52c-105e0063b81b")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/ljcar/Downloads/LIB_SPU01M-05/SPU01M-05/3D/SPU01M-05.stp"
+		(model "${KIPRJMOD}/kicad-library/models/SPU01M-12.stp"
 			(offset
-				(xyz 2.35 -9.5 0)
+				(xyz 2.5 -9 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 -0 -0)
-			)
-		)
-		(model "C:/Users/ljcar/Downloads/LIB_SPU01M-12/SPU01M-12/3D/SPU01M-12.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -3994,7 +3982,7 @@
 			(uuid "a759c177-40ce-403e-a07c-6f2ea655d92f")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/MyLibrary.pretty/MolexMicrofitPlus1x3.stp"
+		(model "${KIPRJMOD}/kicad-library/models/MolexMicrofitPlus1x3.stp"
 			(offset
 				(xyz -3 -4 0)
 			)
@@ -6344,7 +6332,7 @@
 			(uuid "da7e9c5f-b818-49f3-b8ea-2e9e2193fdc0")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/MyLibrary.pretty/MolexMicrofitPlus1x3.stp"
+		(model "${KIPRJMOD}/kicad-library/models/MolexMicrofitPlus1x3.stp"
 			(offset
 				(xyz -3 -4 0)
 			)

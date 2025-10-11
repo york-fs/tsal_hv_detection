@@ -1,5 +1,4 @@
 (sym_lib_table
   (version 7)
-  (lib (name "SPU01M-05")(type "KiCad")(uri "C:/Users/joshb/Documents/Uni Work/Formula Student/TSAL/PCB/Components/SPU01M-05/2024-02-25_17-56-22.kicad_sym")(options "")(descr ""))
-  (lib (name "Components")(type "KiCad")(uri "${KIPRJMOD}/Components.kicad_sym")(options "")(descr ""))
+  (lib (name "yfs")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/yfs.kicad_sym")(options "")(descr ""))
 )
