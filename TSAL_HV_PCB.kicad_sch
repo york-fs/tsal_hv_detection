@@ -3798,7 +3798,7 @@
 	)
 	(rectangle
 		(start 116.84 27.94)
-		(end 180.34 58.42)
+		(end 182.88 58.42)
 		(stroke
 			(width 0)
 			(type dash)
@@ -4690,16 +4690,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 41.91) (xy 171.45 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3309ffc-b1da-4ce6-bab4-2d9fb64d30e1")
-	)
-	(wire
-		(pts
 			(xy 201.93 85.09) (xy 203.2 85.09)
 		)
 		(stroke
@@ -4727,6 +4717,16 @@
 			(type default)
 		)
 		(uuid "fa367916-cc67-4677-b8d8-02dc1dd25f73")
+	)
+	(wire
+		(pts
+			(xy 172.72 41.91) (xy 166.37 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbdf56a2-a1f8-4e20-8361-387d5118f07c")
 	)
 	(wire
 		(pts
@@ -5546,7 +5546,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 171.45 41.91 0)
+		(at 172.72 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5555,7 +5555,7 @@
 		(fields_autoplaced yes)
 		(uuid "37fecf38-016a-4774-9b6d-4754227b1209")
 		(property "Reference" "#PWR019"
-			(at 171.45 45.72 0)
+			(at 172.72 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5564,7 +5564,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 171.45 36.83 0)
+			(at 172.72 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5572,7 +5572,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 41.91 0)
+			(at 172.72 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5581,7 +5581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 41.91 0)
+			(at 172.72 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5590,7 +5590,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 171.45 41.91 0)
+			(at 172.72 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6309,7 +6309,7 @@
 				)
 			)
 		)
-		(property "Value" "Polyfuse"
+		(property "Value" "100mA"
 			(at 200.66 29.21 90)
 			(effects
 				(font
@@ -8563,6 +8563,77 @@
 			(project "TSAL_HV_PCB"
 				(path "/49aa962b-9fa6-407b-842a-3cf8300a05dc"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 172.72 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bdf2c9f9-8f74-447e-924f-c1f40b161254")
+		(property "Reference" "F2"
+			(at 175.26 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "500mA"
+			(at 175.26 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 171.45 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+			(at 172.72 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a3227b49-1c22-4e17-9e9f-94b899544577")
+		)
+		(pin "1"
+			(uuid "8ba59ae7-f381-4ef1-8cae-f12ec66d6061")
+		)
+		(instances
+			(project "TSAL_HV_PCB"
+				(path "/49aa962b-9fa6-407b-842a-3cf8300a05dc"
+					(reference "F2")
 					(unit 1)
 				)
 			)
