@@ -2073,7 +2073,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:BZX84Cxx"
+		(symbol "Diode:BZX384xxxx"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2084,22 +2084,31 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
-				(at 0 3.81 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "BZX84Cxx"
-				(at 0 -3.81 0)
+			(property "Value" "BZX384xxxx"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(property "Footprint" "Diode_SMD:D_SOD-323"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/85764/bzx384.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2108,16 +2117,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "300mW Zener Diode, SOT-23"
+			(property "Description" "300mW Zener Diode, SOD-323"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2135,7 +2135,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "ki_fp_filters" "D*SOD*323*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2144,7 +2144,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BZX84Cxx_0_1"
+			(symbol "BZX384xxxx_0_1"
 				(polyline
 					(pts
 						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
@@ -2182,7 +2182,7 @@
 					)
 				)
 			)
-			(symbol "BZX84Cxx_1_1"
+			(symbol "BZX384xxxx_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2193,26 +2193,7 @@
 							)
 						)
 					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 1.27 0 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2230,7 +2211,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3976,12 +3957,6 @@
 		(uuid "22750453-072a-4ad5-b091-86f96c27a416")
 	)
 	(junction
-		(at 86.36 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2a15890e-6d78-4bed-a210-a0664b65e5b4")
-	)
-	(junction
 		(at 166.37 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4034,6 +4009,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4b2b3f6-cd5e-4a02-98f9-30ffe39bc6f8")
+	)
+	(junction
+		(at 86.36 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcf0a205-b942-44d5-9b5a-a2db478e01a5")
 	)
 	(no_connect
 		(at 44.45 38.1)
@@ -4156,6 +4137,16 @@
 			(type default)
 		)
 		(uuid "205f52b0-9ec1-4c57-863e-861f369c5b21")
+	)
+	(wire
+		(pts
+			(xy 86.36 87.63) (xy 120.65 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22213cce-bd7c-4325-aefc-596dd1613e2e")
 	)
 	(wire
 		(pts
@@ -4506,16 +4497,6 @@
 			(type default)
 		)
 		(uuid "ab36fa1f-b00e-473e-b220-cbe001951d51")
-	)
-	(wire
-		(pts
-			(xy 86.36 87.63) (xy 120.65 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abc27024-582e-4fc7-aa4b-1a2e41a20051")
 	)
 	(wire
 		(pts
@@ -5766,79 +5747,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BZX84Cxx")
-		(at 86.36 91.44 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "426c2c63-90cb-4225-bc77-1040b5505356")
-		(property "Reference" "D1"
-			(at 88.9 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BZX84Cxx"
-			(at 88.9 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 86.36 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf"
-			(at 86.36 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 86.36 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c1ea8503-515b-4d34-b69e-69e8ba2e08e5")
-		)
-		(pin "2"
-			(uuid "e73579b1-f756-42fc-9a0c-642562af6487")
-		)
-		(pin "3"
-			(uuid "9de6c593-f694-4bb3-a23c-443eeec80ce4")
-		)
-		(instances
-			(project "TSAL_HV_PCB"
-				(path "/49aa962b-9fa6-407b-842a-3cf8300a05dc"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 189.23 73.66 0)
 		(unit 1)
@@ -5912,7 +5820,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "46c4d4df-22fd-486d-bc39-2909045f2949")
 		(property "Reference" "#PWR09"
 			(at 125.73 45.72 0)
@@ -5923,12 +5830,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12VA"
-			(at 125.73 36.83 0)
+		(property "Value" "+5VA"
+			(at 123.19 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6171,6 +6079,76 @@
 			(project "TSAL_HV_PCB"
 				(path "/49aa962b-9fa6-407b-842a-3cf8300a05dc"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BZX384xxxx")
+		(at 86.36 91.44 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "523a9f41-7415-41c0-8126-7300d1ea4c37")
+		(property "Reference" "D1"
+			(at 88.9 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZX384xxxx"
+			(at 88.9 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 81.915 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/86474/bzx384.pdf"
+			(at 86.36 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "300mW Zener Diode, SOD-323"
+			(at 86.36 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "982ad6a4-edc4-4fcd-a3b8-47252e01d2f6")
+		)
+		(pin "1"
+			(uuid "564ef4d9-7fe2-4812-81c6-2d3784331b84")
+		)
+		(instances
+			(project "TSAL_HV_PCB"
+				(path "/49aa962b-9fa6-407b-842a-3cf8300a05dc"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -7072,7 +7050,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8643b760-76b7-44e7-9f94-04694b899c2e")
 		(property "Reference" "#PWR011"
 			(at 125.73 76.2 0)
@@ -7083,12 +7060,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12VA"
-			(at 125.73 67.31 0)
+		(property "Value" "+5VA"
+			(at 123.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7355,7 +7333,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 45.72 71.1199 0)
 			(effects
 				(font
@@ -7425,7 +7403,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12VA"
+		(property "Value" "+5VA"
 			(at 43.18 54.61 0)
 			(effects
 				(font
@@ -7907,7 +7885,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.4k"
+		(property "Value" "1.8k"
 			(at 142.24 71.12 0)
 			(effects
 				(font
@@ -8065,7 +8043,7 @@
 				)
 			)
 		)
-		(property "Value" "SPU01M-12"
+		(property "Value" "SPU01M-5"
 			(at 140.97 35.56 0)
 			(effects
 				(font
@@ -8073,7 +8051,7 @@
 				)
 			)
 		)
-		(property "Footprint" "yfs:SPU01M-12"
+		(property "Footprint" "yfs:SPU01M-5"
 			(at 137.16 38.1 0)
 			(effects
 				(font
@@ -8082,7 +8060,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.meanwellusa.com/webapp/product/search.aspx?prod=SPU01"
 			(at 137.16 38.1 0)
 			(effects
 				(font
@@ -8091,7 +8069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Isolated DC/DC Converters - Through Hole 10.8-13.2Vin 5Vout 200mA SIP6 Unreg Iso"
 			(at 138.43 38.1 0)
 			(effects
 				(font
@@ -8208,7 +8186,7 @@
 				)
 			)
 		)
-		(property "Value" "SS34"
+		(property "Value" "NSR0530HT1G"
 			(at 214.9475 29.21 0)
 			(effects
 				(font
@@ -8216,7 +8194,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 214.63 37.465 0)
 			(effects
 				(font
@@ -8225,7 +8203,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/3/101/1/NSR0530H-D.PDF"
 			(at 214.63 33.02 0)
 			(effects
 				(font
@@ -8234,7 +8212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "40V 3A Schottky Diode, SMA"
+		(property "Description" "Schottky Diodes & Rectifiers 0.5 A 30 V SOD-323 S"
 			(at 214.63 33.02 0)
 			(effects
 				(font
@@ -8475,7 +8453,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12VA"
+		(property "Value" "+5VA"
 			(at 102.87 91.44 0)
 			(effects
 				(font
@@ -8794,7 +8772,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "cb21cb88-875c-4d8a-b47f-3dbe240dbde9")
 		(property "Reference" "#PWR013"
 			(at 139.7 72.39 0)
@@ -8805,12 +8782,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12VA"
-			(at 139.7 63.5 0)
+		(property "Value" "+5VA"
+			(at 138.43 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
